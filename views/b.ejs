@@ -1,0 +1,35 @@
+<% include partial/header %>
+<div class="container">
+	<header class="jumbotron">
+
+		<div class="container">
+			<h1>THESE ARE POLLUTION SOURCES THAT NEED TO BE TACKLED BY GOVT.</h1>
+			<p>POLLUTION SOURCES</p>
+			<p>
+				<a class="btn btn-primary btn-l" href="/cg/new">click to add pollution sources near you</a>
+			</p>
+		</div>
+	</header
+
+	<div class="row" style="display:flex; flex-wrap:wrap;">
+		<%com.forEach(function(com) 
+		{%>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail"
+					<div clas="caption">
+					<h4><%=com.name%></h4>
+					</div>
+					<img src="<%=com.link%>">
+
+					<h3><%=com.description%></h3>
+					</div>
+					<br><br>
+					
+				</div>
+
+		<%});%>
+	</div>
+	
+</div>
+
+<% include partial/footer %>
